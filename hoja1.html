@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interfaz Web de Videos</title>
+    <style>
+        /* Paleta de colores */
+        :root {
+            --color-primario: red;
+            --color-secundario: #333;
+            --color-fondo: grey;
+            --color-boton: red;
+            --color-boton-hover: #45a049;
+            --color-texto-boton: white;
+            --color-titulo: white;
+        }
+
+        /* Estilos generales */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: var(--color-fondo);
+        }
+
+        /* Contenedor principal */
+        .contenedor {
+            display:flex;
+        }
+
+        /* Cabecera */
+        .cabecera {
+            background-color: var(--color-primario);
+            padding: 20px;
+            text-align: center;
+            color: var(--color-titulo);
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        /* Menú lateral */
+        .menu-lateral {
+            width: 100px;
+            background-color: var(--color-secundario);
+            padding: 20px;
+            height: 200vh;
+            box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Título del menú */
+        .menu-lateral h3 {
+            color: white;
+            margin-bottom: 10px;
+        }
+
+        /* Selectores de categorías */
+        .menu-lateral select {
+            width: 100%;
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+
+        /* Botones en el menú lateral */
+        .menu-lateral .boton {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            text-align: center;
+            background-color: var(--color-boton);
+            color: var(--color-texto-boton);
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .menu-lateral .boton:hover {
+            background-color: var(--color-boton-hover);
+        }
+
+        /* Contenido principal */
+        .contenido {
+            flex: 1;
+            padding: 20px;
+        }
+
+        /* Cuadrícula para videos o contenido */
+        .video-grid {
+            display: *;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 40px;
+        }
+
+        /* Estilos de los videos */
+        .video-grid video {
+            width: 100%;
+            height: auto;
+            border: 2px solid black;
+            border-radius: 2px;
+        }
+
+        /* Borde alrededor del contenido de video */
+        .video-grid .video-contenido {
+            padding: 10px;
+            border: 0px solid white ;
+            border-radius: 5px;
+            background-color: ;
+        }
+
+        /* Estilos para pantallas más pequeñas */
+        @media (max-width: 768px) {
+            .video-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .video-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <div class="cabecera">
+        ALLPorn GAY
+    </div>
+
+    <!-- Contenedor que incluye el menú lateral y el contenido principal -->
+    <div class="contenedor">
+
+        <!-- Menú lateral con categorías y botones -->
+        <div class="menu-lateral">
+            <h3>Categorías</h3>
+            <select id="categoria" onchange="guardarCategoria()">
+                <option value="todos">Selecione</option>
+                <option value="todos">Cum</option>
+                <option value="musica">Orgy</option>
+                <option value="peliculas">XXL</option>
+                <option value="documentales">Interracial</option>
+            </select>
+
+            <button class="boton" onclick="filtrarVideos()">Filtrar</button>
+
+        </div>
+
+        <!-- Contenido principal -->
+        <div class="contenido">
+            <h2>Videos</h2>
+            <div class="video-grid">
+                <!-- Reemplazar con videos reales -->
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video11.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video12.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video13.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video14.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video15.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video16.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video17.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video18.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video19.mp4" type="video/mp4">
+                    </video>
+					  <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+                <div class="video-contenido">
+                    <video controls>
+                        <source src="video20.mp4" type="video/mp4">
+                    </video>
+       				 <h3>Título del video 1</h3>
+      				  <p>Descripción del video 1</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Guardar la categoría seleccionada en localStorage
+        function guardarCategoria() {
+            var categoria = document.getElementById("categoria").value;
+            localStorage.setItem("categoriaSeleccionada", categoria);
+        }
+
+        // Filtrar videos (simplemente como demostración)
+        function filtrarVideos() {
+            var categoria = localStorage.getItem("categoriaSeleccionada");
+            alert("Filtrar videos por categoría: " + categoria);
+            // Aquí puedes implementar la lógica real para filtrar los videos
+        }
+
+        // Resetear el filtro de categoría
+        function resetearFiltro() {
+            document.getElementById("categoria").value = "todos";
+            localStorage.setItem("categoriaSeleccionada", "todos");
+            alert("Filtro reseteado a todos los videos.");
+        }
+
+        // Al cargar la página, establecer la categoría seleccionada si existe en localStorage
+        window.onload = function() {
+            var categoriaGuardada = localStorage.getItem("categoriaSeleccionada");
+            if (categoriaGuardada) {
+                document.getElementById("categoria").value = categoriaGuardada;
+            }
+        }
+    </script>
+
+</body>
+</html>
+
+
+  
+  <!-- Pie de página -->
+  <footer>
+     <!-- Paginación -->
+    <div class="paginacion">
+        <a href="hoja2.html">Siguiente Página;</a>
+    </div>
+  </footer>
+  
+  <script src="script.js"></script> <!-- Enlace a tu archivo de JavaScript -->
+</body>
+</html>
